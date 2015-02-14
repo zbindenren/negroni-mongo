@@ -8,8 +8,7 @@ import (
 )
 
 const (
-	//ContextKey defines the key under wich the the database reference is stored in the request context.
-	ContextKey = "database"
+	ContextKey = "database" // ContextKey defines the key under wich the the database reference is stored in the request context.
 )
 
 // MongoMiddleware is a middleware handler that stores a mongo database reference in the request context.

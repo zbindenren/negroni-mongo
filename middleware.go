@@ -26,7 +26,7 @@ func NewMongoMiddleware(uri string) *MongoMiddleware {
 }
 
 func (m *MongoMiddleware) ServeHTTP(rw http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
-	reqSession := m.Session.Clone()
+	reqSession := m.Session.Copy()
 	defer reqSession.Close()
 	httpcontext.Set(r, ContextKey, m.Session)
 	next(rw, r)

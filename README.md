@@ -1,3 +1,5 @@
+# Repository is archived
+
 # negroni-mongo [![GoDoc](http://godoc.org/github.com/zbinderen/negroni-mongo?status.svg)](http://godoc.org/github.com/zbindenren/negroni-mongo)
 Mongo middleware for [negroni](https://github.com/codegangsta/negroni).
 
